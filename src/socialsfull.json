@@ -1,0 +1,42 @@
+[
+    {
+        "name": "GitHub",
+        "link": "https://github.com/Tturna",
+        "image": "/imgs/socials/github.png"
+    },
+    {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/roope-juponaho-1a9199156/",
+        "image": "/imgs/socials/linkedin.png"
+    },
+    {
+        "name": "Itch",
+        "link": "https://tturna.itch.io/",
+        "image": "/imgs/socials/itch.png"
+    },
+    {
+        "name": "Twitter",
+        "link": "https://twitter.com/ArttuRna",
+        "image": "/imgs/socials/twitter.png"
+    },
+    {
+        "name": "YouTube",
+        "link": "https://www.youtube.com/channel/UChFMo1uUvpJ51oaiy7Ysn6g/featured",
+        "image": "/imgs/socials/youtube.png"
+    },
+    {
+        "name": "Twitch",
+        "link": "https://www.twitch.tv/tturnadev",
+        "image": "/imgs/socials/twitch.png"
+    },
+    {
+        "name": "Reddit",
+        "link": "https://www.reddit.com/user/Tturna",
+        "image": "/imgs/socials/reddit.png"
+    },
+    {
+        "name": "Steam",
+        "link": "https://steamcommunity.com/id/tturna/",
+        "image": "/imgs/socials/steam.png"
+    }
+]

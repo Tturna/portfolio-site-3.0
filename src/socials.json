@@ -1,0 +1,17 @@
+[
+    {
+        "name": "GitHub",
+        "link": "https://github.com/Tturna",
+        "image": "/imgs/socials/github.png"
+    },
+    {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/roope-juponaho-1a9199156/",
+        "image": "/imgs/socials/linkedin.png"
+    },
+    {
+        "name": "Itch",
+        "link": "https://tturna.itch.io/",
+        "image": "/imgs/socials/itch.png"
+    }
+]
