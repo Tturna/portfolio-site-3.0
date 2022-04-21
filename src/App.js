@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Route,
   Routes,
@@ -9,6 +9,7 @@ import {
 // import logo from './logo.svg';
 import './App.css';
 import socials from "./socials.json";
+import Home from "./Home";
 import Projects from "./Projects";
 import Portfolio from "./Portfolio";
 import Music from "./Music";
@@ -31,15 +32,26 @@ function App() {
     return 0; // This is literally just to remove a warning
   })
 
-  // main box hide animation
+  // main box hide and show animation
   var animUp = false;
-  const anim = () => {
-    if (animUp) return;
+  const anim = (btnName) => {
+
+    // If clicking the home button, use easein animation
+    // Otherwise use easeout animation
+    // If ease out has already played and the user clicked on a non-home button, do nothing and return
+    var animName = animUp && btnName === "home" ? "maineasein" : "maineaseout";
+    if ((animUp && btnName !== "home") ||
+        (!animUp && btnName === "home"))
+    {
+      return;
+    }
+    
     const main = document.getElementById('main');
 
     main.classList.remove("maineaseout"); // reset animation
+    main.classList.remove("maineasein");
     void main.offsetWidth; // trigger reflow
-    main.classList.add("maineaseout"); // start animation
+    main.classList.add(animName); // start animation
     animUp = !animUp;
   };
 
@@ -69,15 +81,17 @@ function App() {
           <img src=".\imgs\BeeGeeTwo_blurred.png" alt="background" />
 
           <div className='buttonarray'>
-            <NavLink to="/Projects"><div className='roundbutton' onClick={() => {anim();}}>Projects</div></NavLink>
-            <NavLink to="/Portfolio"><div className='roundbutton' onClick={() => {anim();}}>Portfolio</div></NavLink>
-            <NavLink to="/Music"><div className='roundbutton' onClick={() => {anim();}}>Music</div></NavLink>
+            <NavLink to="/"><div className='roundbutton' onClick={() => {anim("home");}}>Home</div></NavLink>
+            <NavLink to="/Projects"><div className='roundbutton' onClick={() => {anim("projects");}}>Projects</div></NavLink>
+            <NavLink to="/Portfolio"><div className='roundbutton' onClick={() => {anim("portfolio");}}>Portfolio</div></NavLink>
+            <NavLink to="/Music"><div className='roundbutton' onClick={() => {anim("music");}}>Music</div></NavLink>
           </div>
         </div>
 
         <div className="content">
           <Routes>
-            {/* <Route path="/" component={Home}/> */}
+            {/* All paths have the / character, so we have to use exact path for our home path */}
+            <Route exact path="/" element={<Home/>}/>
             <Route path="/Projects" element={<Projects/>}/>
             <Route path="/Portfolio" element={<Portfolio/>}/>
             <Route path="/Music" element={<Music/>}/>
