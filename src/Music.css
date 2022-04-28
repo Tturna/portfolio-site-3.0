@@ -1,0 +1,76 @@
+.musicbox {
+    display: inline-block;
+    width: 50%;
+    height: 20vh;
+    margin: 0 20px;
+    box-shadow: 0px 0px 20px #1b1b1b;
+    animation: boxappear 2s forwards;
+}
+
+.altbox {
+    width: 30%;
+}
+
+.featuredbox {
+    width: 65%;
+    height: 30vh;
+    margin: 30px 80px;
+    animation: boxappear 1s forwards;
+}
+
+.boxrow {
+    margin: 60px;
+}
+
+.sclink {
+    display: inline-block;
+    width: 10%;
+    margin: auto;
+}
+
+.sclink img {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    transform: scale(1, 1);
+    transition: transform 200ms;
+}
+
+.sclink img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.musicframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.musicdetails {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+}
+
+.musicanchor {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+@keyframes boxappear {
+    from {
+        transform: translate(0, 100%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 100%;
+    }
+}
