@@ -78,7 +78,7 @@ function App() {
 
         <div className='mainbox' id='main'>
 
-          <img src=".\imgs\BeeGeeTwo_blurred.png" alt="background" />
+          <img src=".\imgs\mainimg.jpg" alt="background" />
 
           <div className='buttonarray'>
             <NavLink to="/"><div className='roundbutton' onClick={() => {anim("home");}}>Home</div></NavLink>
