@@ -7,6 +7,21 @@ class Music extends Component {
             <div>
                 <h2>Music</h2>
 
+                <div className="descarea centercontent">
+                    <div className="descbox">
+                        <img src=".\imgs\mainimg.jpg" alt="main background"/>
+                        <p>
+                            I make music as a hobby. Here you can find some tracks that
+                            I've marked as "finished". I try to combine metal into
+                            different types of electronic music from time to time.
+                        </p>
+                    </div>
+
+                    <div id="img">
+
+                    </div>
+                </div>
+
                 <div className="feature">
                     <div className="musicbox featuredbox">
                         <iframe className="musicframe" title="Stimulant" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1196643901&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div className="musicdetails"><a className="musicanchor" href="https://soundcloud.com/tturna" title="Tturna" target="_blank" rel="noreferrer">Tturna</a> · <a className="musicanchor" href="https://soundcloud.com/tturna/stimulant" rel="noreferrer" title="Stimulant" target="_blank">Stimulant</a></div>

@@ -39,7 +39,14 @@ function App() {
     // If clicking the home button, use easein animation
     // Otherwise use easeout animation
     // If ease out has already played and the user clicked on a non-home button, do nothing and return
-    var animName = animUp && btnName === "home" ? "maineasein" : "maineaseout";
+    var mainAnimName = "maineaseout";
+    var titleAnimName = "titlehideup100";
+
+    if (animUp && btnName === "home") {
+      mainAnimName = "maineasein";
+      titleAnimName = "titlerevealdown100"
+    }
+
     if ((animUp && btnName !== "home") ||
         (!animUp && btnName === "home"))
     {
@@ -47,11 +54,15 @@ function App() {
     }
     
     const main = document.getElementById('main');
+    const title = document.getElementById('title');
 
     main.classList.remove("maineaseout"); // reset animation
     main.classList.remove("maineasein");
-    void main.offsetWidth; // trigger reflow
-    main.classList.add(animName); // start animation
+    title.classList.remove("titlehidedown100");
+    title.classList.remove("titlerevealdown100");
+    void main.offsetWidth; // trigger reflow (don't quite understand this, I kinda stole it)
+    main.classList.add(mainAnimName); // start animation
+    title.classList.add(titleAnimName)
     animUp = !animUp;
   };
 
@@ -78,13 +89,20 @@ function App() {
 
         <div className='mainbox' id='main'>
 
-          <img src=".\imgs\mainimg.jpg" alt="background" />
+          <img src=".\imgs\mainimg.jpg" alt="main background" />
+
+          <div className="titlebox" id="title">
+            <h1>Roope Juponaho</h1>
+            <h2>Video game and small time software development with music on the side.</h2>
+          </div>
 
           <div className='buttonarray'>
-            <NavLink to="/"><div className='roundbutton' onClick={() => {anim("home");}}>Home</div></NavLink>
-            <NavLink to="/Projects"><div className='roundbutton' onClick={() => {anim("projects");}}>Projects</div></NavLink>
-            <NavLink to="/Portfolio"><div className='roundbutton' onClick={() => {anim("portfolio");}}>Portfolio</div></NavLink>
-            <NavLink to="/Music"><div className='roundbutton' onClick={() => {anim("music");}}>Music</div></NavLink>
+            <div className="buttoncenter">
+              <NavLink to="/"><div className='roundbutton' onClick={() => {anim("home");}}>Home</div></NavLink>
+              <NavLink to="/Projects"><div className='roundbutton' onClick={() => {anim("projects");}}>Projects</div></NavLink>
+              <NavLink to="/Portfolio"><div className='roundbutton' onClick={() => {anim("portfolio");}}>Portfolio</div></NavLink>
+              <NavLink to="/Music"><div className='roundbutton' onClick={() => {anim("music");}}>Music</div></NavLink>
+            </div>
           </div>
         </div>
 

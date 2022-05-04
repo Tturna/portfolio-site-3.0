@@ -21,6 +21,25 @@ h2 {
     object-fit: cover;
 }
 
+.titlebox {
+    position: absolute;
+    width: 100%;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.titlebox h1 {
+    font-size: 4em;
+    margin: 0;
+    line-height: 1.1em;
+}
+
+.titlebox h2 {
+    font-size: 1em;
+}
+
 .buttonarray {
     position: absolute;
     bottom: 0;
@@ -28,13 +47,18 @@ h2 {
     transform: translate(-50%, 0);
 }
 
+.buttoncenter {
+    width: fit-content;
+    margin: auto;
+}
+
 .roundbutton {
     display: inline-block;
     width: 6vw;
     height: 2vw;
     line-height: 2vw;
-    padding: 5px 10px;
-    margin: 10px;
+    padding: 5px 1vw;
+    margin: 1vw;
     border: 2px solid #e5e5e5;
     border-radius: 25px;
     text-align: center;
@@ -48,8 +72,8 @@ h2 {
 
 .socialbar a {
     display: inline-block;
-    width: 3vw;
-    height: 3vw;
+    width: 5vh;
+    height: 5vh;
     margin: 0 15px;
 }
 
@@ -60,6 +84,7 @@ h2 {
 
 .socialbar ul {
     padding: 0;
+    margin: 0;
 }
 
 .socialbar li {
@@ -70,6 +95,49 @@ h2 {
 
 .socialbar li:hover {
     transform: scale(1.2, 1.2);
+}
+
+.descarea {
+    width: 100%;
+    height: 30vh;
+}
+
+.descbox {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    margin-left: 10vw;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #1B1B1B;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.descbox img {
+    position: absolute;
+    left: 0;
+    top: -60%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(7px);
+}
+
+.descbox p {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
+    margin: 0;
+}
+
+#img {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin-left: 5vw;
+    box-shadow: 0px 0px 20px #1B1B1B;
+    vertical-align: middle;
 }
 
 .centercontent {
@@ -126,6 +194,17 @@ h2 {
     transform: translate(0, 0);
 }
 
+#projectlink {
+    width: 15vw;
+    height: 15vw;
+    transform: scale(1,1);
+    transition: transform 200ms;
+}
+
+#projectlink:hover {
+    transform: scale(1.1, 1.1);
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -144,6 +223,59 @@ footer p {
     transform: translate(0, 0);
 }
 
+@media screen and (max-width: 950px) {
+    .buttonarray {
+        width: 100%;
+    }
+
+    .roundbutton {
+        width: 20vw;
+        height: 4vh;
+        line-height: normal;
+    }
+
+    .descbox {
+        width: 80%;
+        margin: auto;
+    }
+
+    .descarea #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .titlebox {
+        bottom: 40%;
+    }
+
+    .contentarea {
+        width: 80%;
+        margin: auto 0 auto 2vw;
+    }
+
+    .contentbox {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .titlebox {
+        bottom: 32%
+    }
+
+    .descarea {
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    .descbox img {
+        top: auto;
+        height: 100%;
+    }
+}
+
 .maineasein {
     animation-name: maineasein;
     animation-duration: 1s;
@@ -153,6 +285,20 @@ footer p {
 
 .maineaseout {
     animation-name: maineaseout;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.titlehideup100 {
+    animation-name: titlehideup100;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.titlerevealdown100 {
+    animation-name: titlerevealdown100;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -185,5 +331,25 @@ footer p {
 
     to {
         transform: translate(0, 0);
+    }
+}
+
+@keyframes titlehideup100 {
+    from {
+        transform: translate(-50%, 0);
+    }
+
+    to {
+        transform: translate(-50%, -100%);
+    }
+}
+
+@keyframes titlerevealdown100 {
+    from {
+        transform: translate(-50%, -100%);
+    }
+
+    to {
+        transform: translate(-50%, 0%);
     }
 }
