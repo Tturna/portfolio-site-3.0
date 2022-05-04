@@ -17,24 +17,20 @@ import React, { Component } from "react";
 class Portfolio extends Component {
     render() {
         return (
-            <div className="centercontent">
-                <h2>Portfolio</h2>
+            <div className="centercontent footermargin">
+                <h1>Portfolio</h1>
 
                 <div className="descarea">
                     <div className="descbox">
-                        <img src=".\imgs\mainimg.jpg" alt="main background"/>
                         <p>
-                            Here is a list of mostly personal hobby projects that
-                            I've done through the years. This doesn't quite include
-                            everything, since some projects are similar to others.
+                            Here are some hobby projects that
+                            I've done through the years.
                             As one could probably tell, my interests are diverse.
-                            You can find my work experience on my LinkedIn page.
+                            Find my work experience on my LinkedIn page.
                         </p>
                     </div>
 
-                    <div id="img">
-
-                    </div>
+                    <img id="img" src=".\imgs\avatar_yellow_portrait_small.jpg" alt="avatar icon"/>
                 </div>
 
                 <div className="contentarea" id="portfolio">

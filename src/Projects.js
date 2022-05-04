@@ -3,12 +3,11 @@ import React, { Component } from "react";
 class Projects extends Component {
     render() {
         return (
-            <div className="centercontent">
-                <h2>Projects</h2>
+            <div className="centercontent footermargin">
+                <h1>Projects</h1>
 
                 <div className="descarea">
                     <div className="descbox">
-                        <img src=".\imgs\mainimg.jpg" alt="main background"/>
                         <p>
                             I plan on having interactive projects and info about my current
                             projects here in the future.
@@ -17,9 +16,7 @@ class Projects extends Component {
                         </p>
                     </div>
 
-                    <div id="img">
-
-                    </div>
+                    <img id="img" src=".\imgs\avatar_yellow_portrait_small.jpg" alt="avatar icon"/>
                 </div>
 
                 <a href="https://github.com/Tturna" target="_blank" rel="noreferrer">

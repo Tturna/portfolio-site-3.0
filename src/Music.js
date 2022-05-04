@@ -4,12 +4,11 @@ import "./Music.css";
 class Music extends Component {
     render() {
         return (
-            <div>
-                <h2>Music</h2>
+            <div className="footermargin">
+                <h1 className="centercontent">Music</h1>
 
                 <div className="descarea centercontent">
                     <div className="descbox">
-                        <img src=".\imgs\mainimg.jpg" alt="main background"/>
                         <p>
                             I make music as a hobby. Here you can find some tracks that
                             I've marked as "finished". I try to combine metal into
@@ -17,9 +16,7 @@ class Music extends Component {
                         </p>
                     </div>
 
-                    <div id="img">
-
-                    </div>
+                    <img id="img" src=".\imgs\avatar_yellow_portrait_small.jpg" alt="avatar icon"/>
                 </div>
 
                 <div className="feature">

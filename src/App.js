@@ -106,7 +106,7 @@ function App() {
           </div>
         </div>
 
-        <div className="content">
+        <div>
           <Routes>
             {/* All paths have the / character, so we have to use exact path for our home path */}
             <Route exact path="/" element={<Home/>}/>

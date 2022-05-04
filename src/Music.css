@@ -17,6 +17,7 @@
     height: 30vh;
     margin: 30px 80px;
     animation: boxappear 1s forwards;
+    box-shadow: 0px 0px 40px #cc425e;
 }
 
 .boxrow {
