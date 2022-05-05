@@ -67,6 +67,23 @@ class Portfolio extends Component {
                             </p>
                         </div>
                     </div>
+
+                    <div className="contentrow">
+                        <div className="contentbox">
+                            <img src=".\imgs\exhibits\pythonyoink.jpg" alt="python logo"/>
+                            <p>
+                                Test text about the thing I'm describing, which in this case
+                                is something I've done like a project or something.
+                            </p>
+                        </div>
+                        <div className="contentbox">
+                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="c sharp logo"/>
+                            <p>
+                                Test text about the thing I'm describing, which in this case
+                                is something I've done like a project or something.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

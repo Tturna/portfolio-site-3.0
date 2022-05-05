@@ -158,13 +158,14 @@ h2 {
 
 .contentrow {
     width: 100%;
+    height: 25vw;
 }
 
 .contentbox {
     display: inline-block;
     position: relative;
     width: 50%;
-    height: 25vw;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -198,7 +199,7 @@ h2 {
 }
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     height: 11vh;
@@ -209,11 +210,11 @@ footer {
 }
 
 footer p {
-    margin: 1vh  auto;
+    margin: 0 auto 1vh;
 }
 
 .footermargin {
-    margin-bottom: 15vh;
+    margin-bottom: 5vh;
 }
 
 .defaulttranslate {
