@@ -65,6 +65,23 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 750px) {
+    .musicbox {
+        display: block;
+        width: 80%;
+        margin: 8vh auto;
+    }
+
+    .boxrow {
+        margin: 0;
+    }
+
+    .sclink {
+        display: block;
+        width: 40%;
+    }
+}
+
 @keyframes boxappear {
     from {
         transform: translate(0, 100%);
