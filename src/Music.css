@@ -65,7 +65,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .musicbox {
         display: block;
         width: 80%;
