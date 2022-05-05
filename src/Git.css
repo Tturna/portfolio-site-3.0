@@ -3,6 +3,7 @@
     width: 90%;
     height: 50vh;
     margin: auto;
+    animation: translateup100 1.5s forwards;
 }
 
 .pin {
