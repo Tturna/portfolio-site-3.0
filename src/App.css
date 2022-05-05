@@ -34,7 +34,7 @@ h2 {
 
 .titlebox h1 {
     font-size: 4em;
-    margin: 0 auto;
+    margin: 1vh auto;
     line-height: 1.1em;
 }
 
@@ -158,14 +158,13 @@ h2 {
 
 .contentrow {
     width: 100%;
-    height: 25vw;
 }
 
 .contentbox {
     display: inline-block;
     position: relative;
     width: 50%;
-    height: 100%;
+    height: 25vw;
     overflow: hidden;
 }
 
@@ -211,6 +210,7 @@ footer {
 
 footer p {
     margin: 0 auto 1vh;
+    padding-top: 1vh;
 }
 
 .footermargin {
@@ -228,8 +228,10 @@ footer p {
 
     .roundbutton {
         width: 20vw;
-        height: 4vh;
+        height: 6vh;
         line-height: 4vh;
+        box-sizing: border-box;
+        text-shadow: 0px 0px 5px #1B1B1B;
     }
 
     .descbox {
