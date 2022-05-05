@@ -36,10 +36,12 @@ class Portfolio extends Component {
                 <div className="contentarea" id="portfolio">
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\pythonyoink.jpg" alt="python logo"/>
+                            <img src=".\imgs\exhibits\python1.jpg" alt="python logo"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                I worked on an assistant bot that would listen to voice commands
+                                and reply using text-to-speech. The bot could read and show videos of
+                                recents news, play Youtube videos or Google something for me, just to
+                                list a couple features. I made it using Python.
                             </p>
                         </div>
                         <div className="contentbox">
