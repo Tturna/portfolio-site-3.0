@@ -36,7 +36,7 @@ class Portfolio extends Component {
                 <div className="contentarea" id="portfolio">
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\python1.jpg" alt="python logo"/>
+                            <img src=".\imgs\exhibits\python1.jpg" alt="python code and logo"/>
                             <p>
                                 I worked on an assistant bot that would listen to voice commands
                                 and reply using text-to-speech. The bot could read and show videos of
@@ -45,7 +45,7 @@ class Portfolio extends Component {
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\arduino.jpg" alt="c sharp logo"/>
+                            <img src=".\imgs\exhibits\arduino.jpg" alt="Arduino board"/>
                             <p>
                                 To improve my knowledge in Arduinos, I've worked on a project to translate
                                 human movements and gestures to digital signals, especially MIDI. I've used 
@@ -57,7 +57,7 @@ class Portfolio extends Component {
 
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\rpi.jpg" alt="arduino board"/>
+                            <img src=".\imgs\exhibits\rpi.jpg" alt="Raspberry Pi board"/>
                             <p>
                                 While I was in vocational college, I started a computer vision project
                                 using Python and OpenCV. I used a Raspberry Pi and a web cam to detect humans
@@ -66,7 +66,7 @@ class Portfolio extends Component {
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="open cv logo"/>
+                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="c sharp code and logo"/>
                             <p>
                                 One time I wanted to look into making desktop applications with C#, so I 
                                 made an automatic event notifier using Windows Forms. The program would allow 
@@ -78,7 +78,7 @@ class Portfolio extends Component {
 
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\js.jpg" alt="python logo"/>
+                            <img src=".\imgs\exhibits\js.jpg" alt="javascript code and logo"/>
                             <p>
                                 I've worked on small time websites for over 4 years. I've made sites using
                                 HTML, CSS, JavaScript, PHP and recently, the React framework, which this site 
@@ -86,7 +86,7 @@ class Portfolio extends Component {
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\unity.png" alt="c sharp logo"/>
+                            <img src=".\imgs\exhibits\unity.png" alt="a Unity game scene"/>
                             <p>
                                 Ever since I started vocational college in 2017, I've done countless small 
                                 game development projects with Unity and C#. I have yet to release a long term

@@ -280,15 +280,15 @@ footer p {
     .roundbutton {
         border: none;
     }
+
+    .contentbox p {
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 3em !important;
-    }
-
-    .contentbox p {
-        font-size: 0.8em;
     }
 }
 
