@@ -45,44 +45,52 @@ class Portfolio extends Component {
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="c sharp logo"/>
+                            <img src=".\imgs\exhibits\arduino.jpg" alt="c sharp logo"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                To improve my knowledge in Arduinos, I've worked on a project to translate
+                                human movements and gestures to digital signals, especially MIDI. I've used 
+                                C++ to measure the acceleration and rotation of the Arduino Nano 33 IoT board.
+                                I made a socket server with Python to receive and process the data.
                             </p>
                         </div>
                     </div>
 
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\arduino.jpg" alt="arduino board"/>
+                            <img src=".\imgs\exhibits\rpi.jpg" alt="arduino board"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                While I was in vocational college, I started a computer vision project
+                                using Python and OpenCV. I used a Raspberry Pi and a web cam to detect humans
+                                in real time and measure their movements. The Pi streamed the image data to a 
+                                custom server over the internet for image processing.
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\opencv.png" alt="open cv logo"/>
+                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="open cv logo"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                One time I wanted to look into making desktop applications with C#, so I 
+                                made an automatic event notifier using Windows Forms. The program would allow 
+                                me to set up custom timed events that it would fire as pop ups. This system
+                                helped me stand up and stretch frequently.
                             </p>
                         </div>
                     </div>
 
                     <div className="contentrow">
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\pythonyoink.jpg" alt="python logo"/>
+                            <img src=".\imgs\exhibits\js.jpg" alt="python logo"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                I've worked on small time websites for over 4 years. I've made sites using
+                                HTML, CSS, JavaScript, PHP and recently, the React framework, which this site 
+                                was made with. I plan on learning more about popular frameworks and web technologies in the future.
                             </p>
                         </div>
                         <div className="contentbox">
-                            <img src=".\imgs\exhibits\csharpyoink.jpg" alt="c sharp logo"/>
+                            <img src=".\imgs\exhibits\unity.png" alt="c sharp logo"/>
                             <p>
-                                Test text about the thing I'm describing, which in this case
-                                is something I've done like a project or something.
+                                Ever since I started vocational college in 2017, I've done countless small 
+                                game development projects with Unity and C#. I have yet to release a long term
+                                game project, but I hope to do that by 2023. 
                             </p>
                         </div>
                     </div>
